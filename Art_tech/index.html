@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTECH - Interactive Learning Platform for Primary Students</title>
+    <meta name="description" content="Interactive online learning platform for primary school students featuring English, typing, music, and art courses">
+    <meta name="keywords" content="primary education, online learning, English courses, typing lessons, music education, art classes, Africa education">
+    <meta property="og:title" content="ARTECH - Interactive Learning Platform">
+    <meta property="og:description" content="Quality education for primary students in Africa">
+    <meta name="twitter:title" content="ARTECH - Interactive Learning Platform">
+    <meta name="twitter:description" content="Quality education for primary students in Africa">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #4F46E5;
+            --secondary-color: #F59E0B;
+            --accent-color: #10B981;
+            --background-color: #F9FAFB;
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            color: var(--text-primary);
+            background-color: var(--background-color);
+        }
+        
+        h1, h2, h3 {
+            font-weight: 700;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 bg-[var(--primary-color)] text-white rounded-lg font-semibold hover:opacity-90 transition-opacity;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 bg-white text-[var(--primary-color)] border-2 border-[var(--primary-color)] rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-all;
+        }
+        
+        .course-card {
+            @apply bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6 cursor-pointer;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/CourseCard.js"></script>
+    <script type="text/babel" src="components/Courses.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
