@@ -1,73 +1,111 @@
-# Welcome to your Lovable project
+# Art_tech
 
-## Project info
+Art_tech is a role-based digital learning platform designed for primary school learners and school staff. It provides an engaging interface for students to build digital skills, while giving teachers and administrators dedicated dashboards to manage courses, monitor activity, and review progress.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## What This Platform Is
 
-## How can I edit this code?
+The platform is an educational web application focused on digital literacy and creative learning. It is built around three user roles:
 
-There are several ways of editing your application.
+- Students learn through interactive course pages, quizzes, progress tracking, and leaderboard views.
+- Teachers manage courses, classes, lessons, grading workflows, and classroom analytics.
+- Administrators monitor users, courses, reports, settings, and overall platform growth.
 
-**Use Lovable**
+The current project is a frontend application with demo data and browser-based state persistence for courses.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Main Functions
 
-Changes made via Lovable will be committed automatically to this repo.
+- Landing page introducing the platform and its learning areas
+- Demo login with role selection for student, teacher, and admin access
+- Student dashboard with courses, quizzes, leaderboard, and progress tracking
+- Teacher dashboard with course management, class overview, lessons, grading, and analytics
+- Admin dashboard with user management, course overview, reports, and platform settings
+- Shared notifications and profile pages for each role
+- Course creation and removal through a shared context
+- Local persistence of courses using `localStorage`
+- Responsive UI for desktop and mobile use
+- Light and dark theme support
 
-**Use your preferred IDE**
+## Learning Areas Highlighted
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Typing
+- English
+- Art and Design
+- Microsoft Office / digital productivity skills
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Technology Used
 
-Follow these steps:
+This project is made with:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- React 18
+- TypeScript
+- Vite
+- React Router DOM
+- Tailwind CSS
+- shadcn/ui
+- Radix UI
+- Framer Motion
+- Recharts
+- TanStack React Query
+- React Hook Form
+- Zod
+- Vitest
+- Playwright
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
+```text
+src/
+  components/     Reusable UI and layout components
+  context/        Shared course state management
+  pages/          Landing page, login page, and role-based dashboard pages
+  hooks/          Custom React hooks
+  test/           Test setup and sample tests
+public/           Static assets
+```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the Development Server
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+### Preview the Production Build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run preview
+```
 
-## What technologies are used for this project?
+### Run Tests
 
-This project is built with:
+```bash
+npm run test
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Notes
 
-## How can I deploy this project?
+- This version uses demo content and does not include a backend API.
+- Added and removed courses are stored in the browser using `localStorage`.
+- The login flow is for dashboard exploration and routes users by selected role.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Author
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Bosco Ishimwe
